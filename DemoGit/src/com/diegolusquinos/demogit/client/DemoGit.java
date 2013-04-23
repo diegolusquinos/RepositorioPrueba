@@ -8,6 +8,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 import com.google.gwt.event.dom.client.KeyCodes;
 import com.google.gwt.event.dom.client.KeyUpEvent;
 import com.google.gwt.event.dom.client.KeyUpHandler;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.DialogBox;
@@ -133,6 +134,8 @@ public class DemoGit implements EntryPoint {
 							}
 
 							public void onSuccess(String result) {
+								Window.alert("Commit 2");
+								
 								dialogBox.setText("Remote Procedure Call");
 								serverResponseLabel
 										.removeStyleName("serverResponseLabelError");
