@@ -136,6 +136,7 @@ public class DemoGit implements EntryPoint {
 							public void onSuccess(String result) {
 								Window.alert("Commit 2");
 								Window.alert("Commit 3");
+								Window.alert("Commit Web");
 								
 								dialogBox.setText("Remote Procedure Call");
 								serverResponseLabel
